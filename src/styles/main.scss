@@ -1,0 +1,185 @@
+@import './Animations/animation';
+@import './Fonts/fonts';
+
+
+
+
+.sticky-header {
+  width: 100vw;
+  position: relative;
+  
+  height: 100vh;
+
+}
+
+.sticky-content {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: -2;
+  white-space: nowrap;
+  width: 250vw; /* Adjust this to make scrolling longer */
+  height: 100vh;
+  align-items: center;
+  padding-inline: 5vw;
+  will-change: transform;
+  
+}
+
+.sticky-content h1 {
+  font-size: 25vw;
+  font-family: "coolvetica", sans-serif;
+  font-weight: 400;
+  color: #111;
+}
+
+
+
+
+
+.text-card{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding-block: 3vw;
+ padding-inline: 6vw;
+ background-color: #ffffff;
+
+
+  .button-wrapper{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+ }
+
+ .text-container{
+    display: flex;
+    color: black;
+    font-family: 'medium';
+    font-size: 2rem;
+    padding-block: 3vw;
+    padding-inline: 17vw;
+    font-weight: 600;
+    text-align: center;
+ }
+
+
+  .bigtext-container{
+    color: black;
+    text-transform: uppercase;
+    font-family: 'coolvetica';
+    font-size: 9vw;
+    padding-block: 3vw;
+    padding-inline: 4vw;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+
+
+ }
+
+}
+
+.bigtextcard{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  height: 160vh;
+  background-color: #fff;
+
+
+  .large-text{
+    margin: 0%;
+    padding: 0;
+    padding-left: 4vw;
+    line-height: 0.8;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    
+    width: fit-content;
+    height: fit-content;
+
+    h1{
+       font-family: 'coolvetica';
+      font-size: 28vw;
+      font-weight: 100;
+      letter-spacing: 0.1vw;
+    }
+
+
+
+    .image-container{
+      overflow: hidden;
+      border-radius: 0.5rem;
+      margin-left: 5vw;
+      display: flex;
+      width: 28vw;
+      height: 12vw;
+      background-color: white;
+    
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+
+
+
+
+.scroll-container {
+ width: 100%;
+ display: flex;
+  overflow: hidden;
+  background: #111;
+  color: white;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #fff;
+    color: #0a0a0a;
+  }
+
+  &:hover .scroll-text hr{
+    background-color: #0a0a0a;
+  }
+
+}
+
+.scroll-content{
+  display: inline-flex;
+  animation: marquee 10s linear infinite;
+
+}
+
+.scroll-text{
+  display: flex;
+  align-items: center;
+   font-family: 'coolvetica';
+   font-weight: 200;
+  font-size: 26vw;
+}
+
+.scroll-text hr {
+  display: inline-block;
+  width: 10vw;
+  height: 0.5px;
+  background: #fff;
+  border: none;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
+
+

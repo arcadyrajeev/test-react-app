@@ -1,0 +1,69 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.head{
+  position: relative;
+  z-index: 10;
+}
+
+.hero-section{
+  position: relative;;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+
+.text-section{
+position: relative;
+  height: fit-content;
+
+}
+
+.below{
+  position: relative;
+  height: fit-content;
+}
+
+
+.dualcard-wrapper{
+   height: 300vh; /* Controls how long the dual-card stays stuck */
+  position: relative;
+}
+
+.big-wrapper{
+   height: fit-content; 
+
+}
+
+.wide-card-wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(233, 233, 233);
+  justify-content: space-between;
+  padding-bottom: 8vw;
+}
+
+.blog-wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  padding: 4vw 4vw;
+  padding-bottom: 8vw;
+}
