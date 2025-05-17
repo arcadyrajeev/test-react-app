@@ -2,8 +2,6 @@
 html, body {
   height: auto;
   min-height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 html {
@@ -35,7 +33,7 @@ position: relative;
 
 .dualcard-wrapper{
    height: 300vh; /* Controls how long the dual-card stays stuck */
-  position: relative;
+
 }
 
 .big-wrapper{
