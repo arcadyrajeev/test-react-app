@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../styles/main.css";
-import image from "../assets/images/VR-2.jpg";
+import image from "/images/VR-2.jpg";
 
 export default function BigTextCard() {
   const textRef = useRef(null); // Ref to the text container

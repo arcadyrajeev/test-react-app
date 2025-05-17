@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import image2 from "../assets/images/front2.avif";
+import image2 from "/images/front2.avif";
 
 import "../styles/main.css";
 

@@ -21,17 +21,17 @@ import MarqueeText from "../components/MarqueeText";
 import Footer from "../components/Footer";
 import BlogPost from "../components/BlogPost";
 
-import image1 from "../assets/images/image1.avif";
-import image2 from "../assets/images/image2.avif";
-import image3 from "../assets/images/image3.avif";
+import image1 from "/images/image1.avif";
+import image2 from "/images/image2.avif";
+import image3 from "/images/image3.avif";
 
-import web1 from "../assets/images/landlite_ing_1.jpg";
-import web2 from "../assets/images/elegance_img_1.jpg";
-import web3 from "../assets/images/bombay_royal_img_1.jpg";
+import web1 from "/images/landlite_ing_1.jpg";
+import web2 from "/images/elegance_img_1.jpg";
+import web3 from "/images/bombay_royal_img_1.jpg";
 
-import blog1 from "../assets/images/blog1.avif";
-import blog2 from "../assets/images/blog2.avif";
-import blog3 from "../assets/images/blog3.avif";
+import blog1 from "/images/blog1.avif";
+import blog2 from "/images/blog2.avif";
+import blog3 from "/images/blog3.avif";
 
 //Home page
 

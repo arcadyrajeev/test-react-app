@@ -1,12 +1,12 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
-import image1 from "../assets/images/face1.avif";
-import image2 from "../assets/images/front2.avif";
-import image3 from "../assets/images/front3.avif";
-import image4 from "../assets/images/front4.avif";
-import image5 from "../assets/images/back1.avif";
-import image6 from "../assets/images/back2.avif";
+import image1 from "/images/face1.avif";
+import image2 from "/images/front2.avif";
+import image3 from "/images/front3.avif";
+import image4 from "/images/front4.avif";
+import image5 from "/images/back1.avif";
+import image6 from "/images/back2.avif";
 
 export default function HomeHero({
   text,
