@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import "../styles/base.css";
 import "../styles/main.css";
@@ -8,13 +8,15 @@ import Hero from "../components/Hero";
 import WideWeb from "../components/WideWebsiteCard";
 import MarqueeText from "../components/MarqueeText";
 
-import web1 from "../assets/images/landlite_ing_1.jpg";
-import web2 from "../assets/images/elegance_img_1.jpg";
-import web3 from "../assets/images/bombay_royal_img_1.jpg";
-import web4 from "../assets/images/workline_img_1.jpg";
-import web5 from "../assets/images/techland_img_1.jpg";
-
 export default function Works() {
+  const [works, setWorks] = useState([]);
+
+  useEffect(() => {
+    //fake database fetch
+    fetch("src/database/works.json")
+      .then((res) => res.json())
+      .then((data) => setWorks(data));
+  }, []);
   return (
     <div>
       <div className="head" id="navbar">
@@ -28,11 +30,9 @@ export default function Works() {
 
       {/* website showcase section */}
       <div className="wide-web-wrapper">
-        <WideWeb imglink={web1} title="LANDLITE" />
-        <WideWeb imglink={web2} title="ELEGANCE" />
-        <WideWeb imglink={web3} title="BOMBAY ROYAL" />
-        <WideWeb imglink={web4} title="WORKLINE" />
-        <WideWeb imglink={web5} title="TECHLAND" />
+        {works.map((work, index) => (
+          <WideWeb key={index} imglink={work.imglink} title={work.title} />
+        ))}
       </div>
 
       {/* infinite scrolling text  */}

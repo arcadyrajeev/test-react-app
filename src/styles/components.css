@@ -44,7 +44,7 @@
 }
 @keyframes scrolling {
   to {
-    transform: translateX(-50%);
+    transform: translate(calc(-20% - 1rem));
   }
 }
 @keyframes pulse {
@@ -359,6 +359,7 @@
 .wide-web .title-card .text {
   margin-left: 4vw;
   font-family: "medium";
+  text-transform: uppercase;
   font-size: 3vw;
   color: #fff;
   font-weight: bolder;
