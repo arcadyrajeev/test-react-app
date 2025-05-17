@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import "../styles/base.css";
 import "../styles/main.css";
+import "../styles/components.css";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import BlogPost from "../components/BlogPost";

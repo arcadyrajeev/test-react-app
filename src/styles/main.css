@@ -42,6 +42,11 @@
     transform: translateX(-50%);
   }
 }
+@keyframes scrolling {
+  to {
+    transform: translate(calc(-20% - 1rem));
+  }
+}
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -108,22 +113,18 @@
   font-style: normal;
 }
 .sticky-header {
-  width: 100vw;
+  height: 500vh; /* Creates enough scroll space */
   position: relative;
-  height: 100vh;
 }
 
 .sticky-content {
-  display: flex;
   position: fixed;
   top: 0;
-  left: 0;
   z-index: -2;
   white-space: nowrap;
-  width: 250vw; /* Adjust this to make scrolling longer */
   height: 100vh;
+  display: flex;
   align-items: center;
-  padding-inline: 5vw;
   will-change: transform;
 }
 
@@ -134,6 +135,77 @@
   color: #111;
 }
 
+.front {
+  z-index: -1;
+}
+
+.back {
+  z-index: -5;
+}
+
+.front, .back {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 150vh;
+  will-change: transform;
+}
+.front .img-box, .back .img-box {
+  width: 15vw;
+  height: 26vw;
+  overflow: hidden;
+}
+.front .img-box img, .back .img-box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.front #front1, .back #front1 {
+  width: 15vw;
+  height: 18vw;
+  position: absolute;
+  top: -5%;
+  left: 20%;
+}
+.front #front2, .back #front2 {
+  width: 10vw;
+  height: 15vw;
+  position: absolute;
+  top: 5%;
+  left: 80%;
+}
+.front #front3, .back #front3 {
+  width: 16vw;
+  height: 16vw;
+  position: absolute;
+  top: 66%;
+  left: 22%;
+}
+.front #front4, .back #front4 {
+  width: 22vw;
+  height: 25vw;
+  position: absolute;
+  top: 65%;
+  left: 65%;
+}
+.front #back1, .back #back1 {
+  width: 22vw;
+  height: 25vw;
+  position: absolute;
+  top: 28%;
+  left: 2%;
+}
+.front #back2, .back #back2 {
+  width: 15vw;
+  height: 20vw;
+  position: absolute;
+  top: 30%;
+  left: 55%;
+}
+
 .text-card {
   display: flex;
   flex-direction: column;
@@ -141,6 +213,7 @@
   justify-content: center;
   padding-block: 3vw;
   padding-inline: 6vw;
+  overflow: hidden;
   background-color: #ffffff;
 }
 .text-card .button-wrapper {
@@ -149,6 +222,22 @@
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
+}
+.text-card .cover-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.text-card .cover-wrapper .cover-card {
+  display: flex;
+  width: 60%;
+  height: 80%;
+  box-shadow: 0 0px 6vw 8vw rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 .text-card .text-container {
   display: flex;
@@ -161,6 +250,7 @@
   text-align: center;
 }
 .text-card .bigtext-container {
+  display: flex;
   color: black;
   text-transform: uppercase;
   font-family: "coolvetica";

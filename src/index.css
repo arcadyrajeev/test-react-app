@@ -9,19 +9,6 @@
   box-sizing: border-box;
 }
 
-/* 2. Set default font and background */
-body {
-  font-family: sans-serif;
-  background-color: #fff;
-  color: #000;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-/* 3. HTML and body take full height */
-html, body {
-  width: 100%;
-  height: 100%;
-}
 
 /* 4. Ensure images and media don't cause overflow */
 img, video, canvas, iframe {

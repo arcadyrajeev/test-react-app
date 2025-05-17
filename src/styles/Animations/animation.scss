@@ -55,6 +55,12 @@
     transform: translateX(-50%);
   }
 }
+
+@keyframes scrolling{
+  to{
+    transform: translate(calc(-20% - 1rem) );
+  }
+}
   
   // Pulse animation
   @keyframes pulse {

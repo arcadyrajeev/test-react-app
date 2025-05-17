@@ -1,14 +1,9 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body{
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+html, body {
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 html {
@@ -22,14 +17,13 @@ html {
 
 .hero-section{
   position: relative;;
-  width: 100%;
-  height: 100%;
   overflow:hidden;
 }
 
 .text-section{
 position: relative;
   height: fit-content;
+  overflow: hidden;
 
 }
 
@@ -46,6 +40,8 @@ position: relative;
 
 .big-wrapper{
    height: fit-content; 
+   position: relative;
+   overflow: hidden;
 
 }
 
