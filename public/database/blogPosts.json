@@ -1,6 +1,6 @@
 [
   {
-    "imglink": "src/assets/images/blog1.avif",
+    "imglink": "/images/blog1.avif",
     "heading": "Understanding Content Management",
     "duration": "5min",
     "date": "1",
@@ -8,7 +8,7 @@
     "year": "2023"
   },
   {
-    "imglink": "src/assets/images/blog2.avif",
+    "imglink": "/images/blog2.avif",
     "heading": "The Future of Headless CMS",
     "duration": "4min",
     "date": "3",
@@ -16,7 +16,7 @@
     "year": "2023"
   },
   {
-    "imglink": "src/assets/images/blog3.avif",
+    "imglink": "/images/blog3.avif",
     "heading": "Managing Digital Assets Efficiently",
     "duration": "6min",
     "date": "10",
@@ -24,7 +24,7 @@
     "year": "2023"
   },
     {
-    "imglink": "src/assets/images/blog1.avif",
+    "imglink": "/images/blog1.avif",
     "heading": "Understanding Content Management",
     "duration": "5min",
     "date": "1",
@@ -32,7 +32,7 @@
     "year": "2023"
   },
   {
-    "imglink": "src/assets/images/blog2.avif",
+    "imglink": "/images/blog2.avif",
     "heading": "The Future of Headless CMS",
     "duration": "4min",
     "date": "3",
@@ -40,7 +40,7 @@
     "year": "2023"
   },
   {
-    "imglink": "src/assets/images/blog3.avif",
+    "imglink": "/images/blog3.avif",
     "heading": "Managing Digital Assets Efficiently",
     "duration": "6min",
     "date": "10",
@@ -48,7 +48,7 @@
     "year": "2023"
   },
     {
-    "imglink": "src/assets/images/blog1.avif",
+    "imglink": "/images/blog1.avif",
     "heading": "Understanding Content Management",
     "duration": "5min",
     "date": "1",
@@ -56,7 +56,7 @@
     "year": "2023"
   },
   {
-    "imglink": "src/assets/images/blog1.avif",
+    "imglink": "/images/blog1.avif",
     "heading": "The Future of Headless CMS",
     "duration": "4min",
     "date": "3",
@@ -64,7 +64,7 @@
     "year": "2023"
   },
   {
-    "imglink": "src/assets/images/blog3.avif",
+    "imglink": "/images/blog3.avif",
     "heading": "Managing Digital Assets Efficiently",
     "duration": "6min",
     "date": "10",
