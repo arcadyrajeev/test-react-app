@@ -44,7 +44,7 @@
 }
 @keyframes scrolling {
   to {
-    transform: translate(calc(-20% - 1rem));
+    transform: translateX(-50%);
   }
 }
 @keyframes pulse {
