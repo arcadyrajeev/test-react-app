@@ -25,7 +25,7 @@ export default function Blog() {
       </div>
 
       <div className="hero-section">
-        <Hero text="BLOG" fsize="30vw" leftpadding="30vw" />
+        <Hero text="BLOG" fsize="30vw" leftpadding="28vw" />
       </div>
 
       <div className="blog-wrapper">
