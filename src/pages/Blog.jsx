@@ -78,6 +78,33 @@ export default function Blog() {
           month="October"
           year="2023"
         />
+
+        <BlogPost
+          imglink={blog1}
+          heading="Undersranding Content Management"
+          duration="5min"
+          date="1"
+          month="October"
+          year="2023"
+        />
+
+        <BlogPost
+          imglink={blog2}
+          heading="Undersranding Content Management"
+          duration="5min"
+          date="1"
+          month="October"
+          year="2023"
+        />
+
+        <BlogPost
+          imglink={blog3}
+          heading="Undersranding Content Management"
+          duration="5min"
+          date="1"
+          month="October"
+          year="2023"
+        />
       </div>
 
       {/* infinite scrolling text  */}
