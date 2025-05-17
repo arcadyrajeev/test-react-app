@@ -2,7 +2,7 @@
 
 
 .contact-container {
-    width: 70%;
+    width: 90%;
   display: flex;
   background-color: #fff;
   padding: 2rem;
@@ -12,7 +12,7 @@
   .contact-info {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 22%;
     padding-right: 2rem;
 
 
@@ -26,11 +26,13 @@
     p {
       margin: 0.5rem 0;
       font-size: 1.4vw;
+      font-weight: bold;
     }
   }
 
   .contact-form {
-    width: 65%;
+    width: 60%;
+    margin-top: 2vw;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
