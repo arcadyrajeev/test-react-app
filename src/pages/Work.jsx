@@ -13,7 +13,7 @@ export default function Works() {
 
   useEffect(() => {
     //fake database fetch
-    fetch("src/database/works.json")
+    fetch("/database/works.json")
       .then((res) => res.json())
       .then((data) => setWorks(data));
   }, []);

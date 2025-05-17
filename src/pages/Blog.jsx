@@ -13,7 +13,7 @@ export default function Blog() {
 
   useEffect(() => {
     //fake database fetch
-    fetch("src/database/blogPosts.json")
+    fetch("/database/blogPosts.json")
       .then((res) => res.json())
       .then((data) => setPosts(data));
   }, []);
