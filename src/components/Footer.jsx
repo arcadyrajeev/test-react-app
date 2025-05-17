@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
 import "../styles/footer.css";
+import { GoArrowUp } from "react-icons/go";
 
 export default function Footer() {
   return (
@@ -70,8 +71,12 @@ export default function Footer() {
         >
           <span>Back To Top </span>
           <div className="arrowbox">
-            <div className="box">↑</div>
-            <div className="box">↑</div>
+            <div className="box">
+              <GoArrowUp />
+            </div>
+            <div className="box">
+              <GoArrowUp />
+            </div>
           </div>
         </a>
       </div>
