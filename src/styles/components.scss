@@ -5,7 +5,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  font-family: 'medium';
+  font-family: 'medium', sans-serif;
   gap: 1vw;
   font-size: 2vw; /* Only one font-size definition */
   width: 15vw;
@@ -86,7 +86,7 @@ padding-inline: 4vw;
 
     .heading{
       text-transform: uppercase;
-      font-family: 'coolvetica';
+      font-family: 'coolvetica', sans-serif;
       font-size: 4rem;
       font-weight: 300;
       transform: scaleX(1.2);
@@ -94,7 +94,7 @@ padding-inline: 4vw;
     }
 
     .bodytext{
-      font-family: 'medium';
+      font-family: 'medium', sans-serif;
       font-size: 2rem;
       font-weight: bold;
       line-height: 1.4;
@@ -112,7 +112,7 @@ padding-inline: 4vw;
 
       .points{
           display: flex;
-          font-family: 'medium';
+          font-family: 'medium', sans-serif;
           width: fit-content;
           background-color: #272727;
           color: white;

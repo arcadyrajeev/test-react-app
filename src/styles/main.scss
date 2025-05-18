@@ -147,7 +147,7 @@
  .text-container{
     display: flex;
     color: black;
-    font-family: 'medium';
+    font-family: 'medium', sans-serif;
     
     font-size: 2rem;
     padding-block: 3vw;
@@ -161,7 +161,7 @@
     display: flex;
     color: black;
     text-transform: uppercase;
-    font-family: 'coolvetica';
+    font-family: 'coolvetica', sans-serif;
     font-size: 9vw;
     padding-block: 3vw;
     padding-inline: 4vw;
@@ -197,7 +197,7 @@
     height: fit-content;
 
     h1{
-       font-family: 'coolvetica';
+       font-family: 'coolvetica', sans-serif;
       font-size: 28vw;
       font-weight: 100;
       letter-spacing: 0.1vw;
@@ -257,7 +257,7 @@
 .scroll-text{
   display: flex;
   align-items: center;
-   font-family: 'coolvetica';
+   font-family: 'coolvetica', sans-serif;
    font-weight: 200;
   font-size: 26vw;
 }

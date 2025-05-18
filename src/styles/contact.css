@@ -46,7 +46,7 @@
   background-color: #fff;
   padding: 2rem;
   gap: 5vw;
-  font-family: "medium";
+  font-family: "medium", sans-serif;
 }
 .contact-container .contact-info {
   display: flex;

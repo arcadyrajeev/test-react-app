@@ -192,7 +192,7 @@
   width: -moz-fit-content;
   width: fit-content;
   flex-direction: column;
-  font-family: "medium";
+  font-family: "medium", sans-serif;
   font-weight: 600;
   font-size: 1.5vw;
   text-align: end;
