@@ -130,7 +130,7 @@
 
 .sticky-content h1 {
   font-size: 25vw;
-  font-family: "coolvetica", sans-serif;
+  font-family: "coolvetica", Impact, sans-serif;
   font-weight: 400;
   color: #111;
 }
@@ -253,7 +253,7 @@
   display: flex;
   color: black;
   text-transform: uppercase;
-  font-family: "coolvetica", sans-serif;
+  font-family: "coolvetica", Impact, sans-serif;
   font-size: 9vw;
   padding-block: 3vw;
   padding-inline: 4vw;
@@ -286,7 +286,7 @@
   height: fit-content;
 }
 .bigtextcard .large-text h1 {
-  font-family: "coolvetica", sans-serif;
+  font-family: "coolvetica", Impact, sans-serif;
   font-size: 28vw;
   font-weight: 100;
   letter-spacing: 0.1vw;
