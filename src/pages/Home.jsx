@@ -1,10 +1,3 @@
-import React, { useRef, useEffect } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  useMotionValueEvent,
-} from "framer-motion";
 import Navbar from "../components/Navbar";
 import "../styles/base.css";
 import "../styles/main.css";
