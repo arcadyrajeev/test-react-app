@@ -164,25 +164,27 @@
   flex-direction: column;
   height: 2vw;
   overflow: hidden;
+  position: relative;
   justify-content: flex-end;
   padding-inline: 0.2vw;
   width: -moz-fit-content;
   width: fit-content;
 }
 .nav-options:hover .optiontext {
-  transform: translateY(1.5vw);
+  transform: translateY(0.1vw);
 }
-.nav-options:hover hr {
-  opacity: 1;
-  width: 100%;
-}
-.nav-options hr {
-  height: 1px;
-  margin-top: 1vw;
+.nav-options::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: 0%;
+  height: 2px;
+  width: 0%;
   background-color: black;
-  width: 0;
-  opacity: 0;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.nav-options:hover::after {
+  width: 100%;
 }
 
 .optiontext {
@@ -194,12 +196,12 @@
   font-weight: 600;
   font-size: 1.5vw;
   text-align: end;
-  transform: translateY(4.5vw);
+  transform: translateY(2.6vw);
   transition: transform 0.35s cubic-bezier(0.1, 0, 0.3, 1);
 }
 .optiontext__box {
   display: flex;
-  margin-block: 0.5vw;
+  margin-block: 0.3vw;
   width: -moz-fit-content;
   width: fit-content;
 }/*# sourceMappingURL=Navbar.css.map */

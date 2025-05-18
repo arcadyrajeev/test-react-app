@@ -32,12 +32,26 @@
     .roll-wrapper{
       display: flex;
       width: 100%;
+      position: relative;
       height: clamp(1.6rem, 3vw, 4vw);
       overflow: hidden;
       flex-direction: column;
-
-    
       cursor: pointer;
+
+     &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 30%; // stick it to the bottom
+        height: 2px;
+        width: 0%;
+        background-color: black;
+        transition: width 0.4s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 80%; // expands on hover
+      }
 
 
       &:hover .roll{
@@ -61,19 +75,7 @@
 
       }
 
-      &:hover hr {
-        opacity: 1;
-        width: 80%;
-      }
-
-      hr{
-        height: 1.5px;
-        transform: translateY(-5.2vw);
-        background-color: #000;
-        width: 0;
-        opacity: 0;
-        transition: width 0.5s ease-in-out;
-      }
+      
     }
   }
 

@@ -68,10 +68,24 @@
 .contact-container .contact-info .roll-wrapper {
   display: flex;
   width: 100%;
+  position: relative;
   height: clamp(1.6rem, 3vw, 4vw);
   overflow: hidden;
   flex-direction: column;
   cursor: pointer;
+}
+.contact-container .contact-info .roll-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+  height: 2px;
+  width: 0%;
+  background-color: black;
+  transition: width 0.4s ease-in-out;
+}
+.contact-container .contact-info .roll-wrapper:hover::after {
+  width: 80%;
 }
 .contact-container .contact-info .roll-wrapper:hover .roll {
   transform: translateY(-4vw);
@@ -87,18 +101,6 @@
   display: flex;
   align-items: center;
   padding: 0.5vw;
-}
-.contact-container .contact-info .roll-wrapper:hover hr {
-  opacity: 1;
-  width: 80%;
-}
-.contact-container .contact-info .roll-wrapper hr {
-  height: 1.5px;
-  transform: translateY(-5.2vw);
-  background-color: #000;
-  width: 0;
-  opacity: 0;
-  transition: width 0.5s ease-in-out;
 }
 .contact-container .contact-form {
   width: 60%;

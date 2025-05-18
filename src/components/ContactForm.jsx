@@ -13,14 +13,14 @@ const ContactForm = () => {
             <p>sakshambhown192</p>
             <p>sakshambhown192</p>
           </div>
-          <hr />
+          <div className="line"></div>
         </div>
         <div className="roll-wrapper">
           <div className="roll">
             <p>+91 62847 22026</p>
             <p>+91 62847 22026</p>
           </div>
-          <hr />
+          <div className="line"></div>
         </div>
       </div>
 
