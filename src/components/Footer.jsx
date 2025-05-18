@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import React from "react";
 import "../styles/footer.css";
 import { GoArrowUp } from "react-icons/go";
+import { FiSend } from "react-icons/fi";
 
 export default function Footer() {
   return (
@@ -57,7 +58,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="email-box">
-          E-mail <NavLink className="email-button">GET NOTIFIED</NavLink>
+          <span>
+            <FiSend />
+            <span style={{ marginLeft: "1vw" }}>E-mail</span>
+          </span>{" "}
+          <NavLink className="email-button">GET NOTIFIED</NavLink>
         </div>
       </div>
       <div className="lowerbox">
