@@ -202,11 +202,12 @@
       font-weight: 100;
       letter-spacing: 0.1vw;
     }
-
-
-
-    .image-container{
+  }
+      .image-container{
       overflow: hidden;
+      position: absolute;
+      top: 35%;
+      left: 55%;
       border-radius: 0.5rem;
       margin-left: 5vw;
       display: flex;
@@ -222,7 +223,6 @@
         object-position: center;
       }
     }
-  }
 }
 
 

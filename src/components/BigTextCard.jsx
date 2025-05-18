@@ -3,24 +3,54 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../styles/main.css";
 import image from "/images/VR-2.jpg";
+import { motion } from "framer-motion";
 
 export default function BigTextCard() {
-  const textRef = useRef(null); // Ref to the text container
-  const coverRef = useRef(null); // Ref to the gradient cover element
+  const slideUpVariant = {
+    hidden: { opacity: 0, y: "10vw" },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
 
   return (
     <div className="bigtextcard">
-      <div className="large-text">
+      <motion.div
+        className="large-text"
+        variants={slideUpVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
         <h1>STRAIGHT</h1>
-      </div>
-      <div className="large-text">
+      </motion.div>
+
+      <motion.div
+        className="large-text"
+        variants={slideUpVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
         <h1>TO THE</h1>
-        <div className="image-container">
-          <img src={image} />
-        </div>
-      </div>
-      <div className="large-text">
+      </motion.div>
+
+      <motion.div
+        className="large-text"
+        variants={slideUpVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
         <h1>BOLD IDEAS</h1>
+      </motion.div>
+      <div className="image-container">
+        <img src={image} />
       </div>
     </div>
   );
