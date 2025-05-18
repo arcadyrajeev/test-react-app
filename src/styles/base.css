@@ -45,7 +45,6 @@ position: relative;
 }
 
 .wide-card-wrapper{
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(233, 233, 233);
@@ -54,7 +53,6 @@ position: relative;
 }
 
 .blog-wrapper{
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(255, 255, 255);
@@ -65,7 +63,6 @@ position: relative;
 
 .contact-wrapper{
   display: flex;
-  width: 100%;
   height: fit-content;
   background-color: #fff;
   padding-block: 3vw;
