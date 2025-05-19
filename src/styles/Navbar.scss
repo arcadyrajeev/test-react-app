@@ -1,15 +1,12 @@
-@import './Animations/animation';
-@import './Fonts/fonts';
-
-
-
+@import "./Animations/animation";
+@import "./Fonts/fonts";
 
 .navbar {
   width: 100%;
   padding-inline: 3vw 4vw;
   position: relative;
   margin: 0;
-  height: 8vw;
+  min-height: 8vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,23 +18,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center; // vertically center
-  align-items: center;     // horizontally center
+  align-items: center; // horizontally center
   height: 6vw;
 
   .name {
     display: flex;
     width: 92%;
     text-align: center;
-    font-family: 'big';
-    font-size: 1.5vw;
+    font-family: "big";
+    font-size: clamp(1rem, 1.5vw, 1.5vw);
     font-weight: 600;
     letter-spacing: 0.4vw;
     transform: scaleY(1.9);
   }
 
   hr {
-    margin-bottom: 0.8vw; // optional spacing above or below
-    height: 0.35vw;
+    margin-bottom: clamp(
+      0.4rem,
+      0.8vw,
+      0.9vw
+    ); // optional spacing above or below
+    height: clamp(0.1rem, 0.35vw, 0.4vw);
     background-color: black;
     width: 96%;
   }
@@ -48,15 +49,15 @@
   width: fit-content;
   align-items: center;
 
-  h2{
-    font-size: 2vw;
+  h2 {
+    font-size: clamp(1.2rem, 2vw, 2.5vw);
   }
 }
 
 .nav-options {
   display: flex;
   flex-direction: column;
-  height: 2vw;
+  height: clamp(2rem, 2vw, 2.2vw);
   overflow: hidden;
   position: relative;
   justify-content: flex-end;
@@ -67,35 +68,35 @@
     transform: translateY(0.1vw);
   }
 
-    &::after {
-      content: "";
+  &::after {
+    content: "";
 
-      position: absolute;
-      left: 5%;
-      bottom: 0%; // stick it to the bottom
-      height: 2px;
-      width: 0%;
-      background-color: black;
-      transition: width 0.4s ease-in-out;
-    }
+    position: absolute;
+    left: 5%;
+    bottom: 0%; // stick it to the bottom
+    height: 2px;
+    width: 0%;
+    background-color: black;
+    transition: width 0.4s ease-in-out;
+  }
 
-    &:hover::after {
-      width: 100%; // expands on hover
-    }
+  &:hover::after {
+    width: 100%; // expands on hover
+  }
 }
 
 .optiontext {
   display: flex;
   width: fit-content;
   flex-direction: column;
-  font-family: 'medium', sans-serif;
+  font-family: "medium", sans-serif;
   font-weight: 600;
-  font-size: 1.5vw;
+  font-size: clamp(1.2rem, 1.5vw, 1.5vw);
   text-align: end;
-  transform: translateY(2.6vw);
+  transform: translateY(clamp(1.45rem, 2.6vw, 2.6rem));
   transition: transform 0.35s cubic-bezier(0.1, 0, 0.3, 1);
 
-  &__box{
+  &__box {
     display: flex;
     margin-block: 0.3vw;
     width: fit-content;

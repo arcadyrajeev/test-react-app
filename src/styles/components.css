@@ -119,8 +119,8 @@
   font-family: "medium", sans-serif;
   gap: 1vw;
   font-size: 2vw; /* Only one font-size definition */
-  width: 15vw;
-  height: 5vw; /* Height remains fixed */
+  width: clamp(9rem, 15vw, 15vw);
+  height: clamp(3.4rem, 5vw, 5vw); /* Height remains fixed */
   justify-content: center;
   align-items: center; /* Center the button content horizontally */
   cursor: pointer;
@@ -131,16 +131,17 @@
 .cta-button:hover .lower {
   transform: scaleY(1);
 }
-.cta-button .upper, .cta-button .lower {
+.cta-button .upper,
+.cta-button .lower {
   display: flex;
   position: absolute;
   background-color: #221edb;
   color: #fff;
   border-radius: 0.3rem;
-  font-size: 1.1vw;
+  font-size: clamp(1rem, 1.1vw, 1.2vw);
   font-weight: 700;
-  padding-block: 1.2vw;
-  padding-inline: 2.4vw;
+  padding-block: clamp(0.8rem, 1.2vw, 1.2vw);
+  padding-inline: clamp(1.6rem, 2.4vw, 2.4vw);
   transition: transform 0.3s cubic-bezier(0, -0.2, 0.58, 1);
 }
 .cta-button .lower {
@@ -158,7 +159,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100vw;
   background-color: #ececec;
   padding-inline: 4vw;
 }
@@ -200,7 +201,7 @@
 }
 .dual-card .text-block .bodytext {
   font-family: "medium", sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1rem, 2vw, 2vw);
   font-weight: bold;
   line-height: 1.4;
 }
@@ -263,7 +264,7 @@
   right: 3%;
   height: 3vw;
   width: 3vw;
-  font-family: "medium";
+  font-family: "medium", sans-serif;
   font-size: 2vw;
   justify-content: flex-end;
   align-items: center;

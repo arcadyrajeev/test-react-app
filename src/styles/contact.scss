@@ -1,20 +1,18 @@
-@import './Fonts/fonts';
-
+@import "./Fonts/fonts";
 
 .contact-container {
-    width: 90%;
+  width: 90%;
   display: flex;
   background-color: #fff;
   padding: 2rem;
   gap: 5vw;
-  font-family: 'medium', sans-serif;
+  font-family: "medium", sans-serif;
 
   .contact-info {
     display: flex;
     flex-direction: column;
-    width: clamp(10rem,22%, 22%);
+    width: clamp(10rem, 22%, 22%);
     padding-right: 2rem;
-
 
     h4 {
       font-weight: bold;
@@ -29,7 +27,7 @@
       font-weight: bold;
     }
 
-    .roll-wrapper{
+    .roll-wrapper {
       display: flex;
       width: 100%;
       position: relative;
@@ -38,7 +36,7 @@
       flex-direction: column;
       cursor: pointer;
 
-     &::after {
+      &::after {
         content: "";
         position: absolute;
         left: 0;
@@ -53,29 +51,23 @@
         width: 80%; // expands on hover
       }
 
-
-      &:hover .roll{
+      &:hover .roll {
         transform: translateY(-4vw);
       }
 
-
-      .roll{
+      .roll {
         display: flex;
         width: 100%;
         flex-direction: column;
         transition: transform 0.3s ease-in-out;
 
-
-        p{
+        p {
           transform: translateY(-0.5vw);
           display: flex;
           align-items: center;
           padding: 0.5vw;
         }
-
       }
-
-      
     }
   }
 
@@ -90,19 +82,17 @@
     .form-item {
       display: flex;
       flex-direction: column;
-      
 
-      .form-head{
+      .form-head {
         display: inline-flex;
         font-size: 0.9rem;
         font-weight: 600;
 
-
         #small {
-        font-weight: 400;
-        font-size: 0.75rem;
-        margin-left: 0.5rem;
-      }
+          font-weight: 400;
+          font-size: 0.75rem;
+          margin-left: 0.5rem;
+        }
       }
 
       input,
@@ -115,8 +105,8 @@
         outline: none;
         resize: none;
 
-        &:hover{
-            border-bottom: 1px solid #000000;
+        &:hover {
+          border-bottom: 1px solid #000000;
         }
       }
 
@@ -131,7 +121,7 @@
       justify-content: flex-start;
       flex-direction: column;
 
-      .heading{
+      .heading {
         font-size: 0.9rem;
         font-weight: 600;
         margin-bottom: 1vw;
@@ -145,10 +135,9 @@
         color: grey;
       }
 
-      input{
+      input {
         background-color: aqua;
       }
-
     }
 
     button {

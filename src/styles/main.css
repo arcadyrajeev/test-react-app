@@ -143,19 +143,22 @@
   z-index: -5;
 }
 
-.front, .back {
+.front,
+.back {
   width: 100%;
   position: fixed;
   top: 0;
   height: 150vh;
   will-change: transform;
 }
-.front .img-box, .back .img-box {
+.front .img-box,
+.back .img-box {
   width: 15vw;
   height: 26vw;
   overflow: hidden;
 }
-.front .img-box img, .back .img-box img {
+.front .img-box img,
+.back .img-box img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -163,42 +166,48 @@
   -o-object-position: center;
      object-position: center;
 }
-.front #front1, .back #front1 {
+.front #front1,
+.back #front1 {
   width: 15vw;
   height: 18vw;
   position: absolute;
   top: -5%;
   left: 20%;
 }
-.front #front2, .back #front2 {
+.front #front2,
+.back #front2 {
   width: 10vw;
   height: 15vw;
   position: absolute;
   top: 5%;
   left: 80%;
 }
-.front #front3, .back #front3 {
+.front #front3,
+.back #front3 {
   width: 16vw;
   height: 16vw;
   position: absolute;
   top: 66%;
   left: 22%;
 }
-.front #front4, .back #front4 {
+.front #front4,
+.back #front4 {
   width: 22vw;
   height: 25vw;
   position: absolute;
   top: 65%;
   left: 65%;
 }
-.front #back1, .back #back1 {
+.front #back1,
+.back #back1 {
   width: 22vw;
   height: 25vw;
   position: absolute;
   top: 28%;
   left: 2%;
 }
-.front #back2, .back #back2 {
+.front #back2,
+.back #back2 {
   width: 15vw;
   height: 20vw;
   position: absolute;
@@ -243,7 +252,7 @@
   display: flex;
   color: black;
   font-family: "medium", sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1rem, 2.5vw, 2.5vw);
   padding-block: 3vw;
   padding-inline: 17vw;
   font-weight: 600;
@@ -254,7 +263,7 @@
   color: black;
   text-transform: uppercase;
   font-family: "coolvetica", Impact, sans-serif;
-  font-size: 9vw;
+  font-size: clamp(1rem, 9vw, 9vw);
   padding-block: 3vw;
   padding-inline: 4vw;
   line-height: 1;

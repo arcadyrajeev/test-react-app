@@ -1,7 +1,7 @@
 
 html, body {
   height: auto;
-  min-height: 100%;
+  min-height: 50rem;
 
 }
 
@@ -15,7 +15,8 @@ html {
 }
 
 .hero-section{
-  position: relative;;
+  position: relative;
+  min-height: 40rem;
   overflow:hidden;
 }
 
