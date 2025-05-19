@@ -13,19 +13,35 @@ export default function Footer() {
           {" "}
           <div className="menu">
             <div className="heading">Sitemap</div>
-            <NavLink to={"/"} className="menu-option">
+            <NavLink
+              to={"/#navbar"}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="menu-option"
+            >
               Home
               <hr />
             </NavLink>
-            <NavLink to={"/works"} className="menu-option">
+            <NavLink
+              to={"/works/#navbar"}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="menu-option"
+            >
               Work
               <hr />
             </NavLink>
-            <NavLink to={"/"} className="menu-option">
+            <NavLink
+              to={"/#navbar"}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="menu-option"
+            >
               About
               <hr />
             </NavLink>
-            <NavLink to={"/blog"} className="menu-option">
+            <NavLink
+              to={"/blog/#navbar"}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="menu-option"
+            >
               Blog
               <hr />
             </NavLink>
