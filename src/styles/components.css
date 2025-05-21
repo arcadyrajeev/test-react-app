@@ -159,7 +159,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100vw;
+  height: 100vh;
   background-color: #ececec;
   padding-inline: 4vw;
 }
@@ -201,7 +201,7 @@
 }
 .dual-card .text-block .bodytext {
   font-family: "medium", sans-serif;
-  font-size: clamp(1rem, 2vw, 2vw);
+  font-size: 2vw;
   font-weight: bold;
   line-height: 1.4;
 }
